@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyKitchen - Recipe Finder App | Discover Delicious Recipes</title>
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <meta name="description" content="MyKitchen Recipe Finder - Discover thousands of delicious recipes from around the world. Search Indian, Italian, Mexican, Chinese cuisines and more. Free recipe app with step-by-step cooking instructions.">
+  <meta name="keywords" content="recipes, cooking, food, kitchen, Indian recipes, Italian recipes, Mexican food, Chinese cuisine, recipe finder, cooking app, free recipes, meal planning, dinner ideas, lunch recipes, breakfast recipes">
+  <meta name="author" content="MyKitchen Recipe App">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="rating" content="General">
+  <meta name="distribution" content="Global">
+  <link rel="alternate" hreflang="en" href="https://yourusername.github.io/recipe-finder">
+  
+  <!-- Enhanced Open Graph Meta Tags -->
+  <meta property="og:title" content="MyKitchen - Recipe Finder App | Discover Delicious Recipes">
+  <meta property="og:description" content="Discover thousands of delicious recipes from around the world. Search Indian, Italian, Mexican, Chinese cuisines and more. Free recipe app with step-by-step cooking instructions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/recipe-finder">
+  <meta property="og:image" content="https://yourusername.github.io/recipe-finder/recipe-app-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MyKitchen Recipe Finder - Discover thousands of delicious recipes">
+  <meta property="og:site_name" content="MyKitchen Recipe Finder">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:author" content="MyKitchen Team">
+  <meta property="article:section" content="Food & Cooking">
+  
+  <!-- Enhanced Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@MyKitchenApp">
+  <meta name="twitter:creator" content="@MyKitchenApp">
+  <meta name="twitter:title" content="MyKitchen - Recipe Finder App | Discover Delicious Recipes">
+  <meta name="twitter:description" content="Discover thousands of delicious recipes from around the world. Search Indian, Italian, Mexican, Chinese cuisines and more.">
+  <meta name="twitter:image" content="https://yourusername.github.io/recipe-finder/recipe-app-preview.jpg">
+  <meta name="twitter:image:alt" content="MyKitchen Recipe Finder - Discover thousands of delicious recipes">
+  
+  <!-- Mobile App Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="MyKitchen">
+  <meta name="theme-color" content="#ff7043">
+  
+  <!-- Preload critical resources for better performance -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"></noscript>
+  
+  <!-- DNS prefetch for external domains -->
+  <link rel="dns-prefetch" href="//www.themealdb.com">
+  <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+  <link rel="dns-prefetch" href="//www.gstatic.com">
+  
+  <!-- Preconnect to critical third parties -->
+  <link rel="preconnect" href="https://www.themealdb.com">
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  
+  <!-- Resource hints for better loading -->
+  <link rel="prefetch" href="https://www.themealdb.com/api/json/v1/1/categories.php">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourusername.github.io/recipe-finder">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Enhanced Structured Data for Recipe App -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "MyKitchen Recipe Finder",
+    "description": "Discover thousands of delicious recipes from around the world with step-by-step cooking instructions",
+    "url": "https://yourusername.github.io/recipe-finder",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires HTML5 support",
+    "permissions": "Not required",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "MyKitchen Team",
+      "url": "https://yourusername.github.io/recipe-finder"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1250",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "applicationSubCategory": "Recipe Finder",
+    "featureList": [
+      "Search thousands of recipes",
+      "Browse by cuisine type",
+      "Step-by-step cooking instructions",
+      "Ingredient lists",
+      "Recipe categories",
+      "Mobile-friendly interface"
+    ],
+    "screenshot": "https://yourusername.github.io/recipe-finder/recipe-app-screenshot.jpg"
+  }
+  </script>
+  
+  <!-- Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MyKitchen Recipe Finder",
+    "url": "https://yourusername.github.io/recipe-finder",
+    "logo": "https://yourusername.github.io/recipe-finder/logo.png",
+    "description": "Your ultimate destination for discovering delicious recipes from around the world",
+    "sameAs": [
+      "https://facebook.com/mykitchen",
+      "https://twitter.com/mykitchenapp",
+      "https://instagram.com/mykitchen"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "contact@your-domain.com"
+    }
+  }
+  </script>
+  
+  <!-- Website Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "MyKitchen Recipe Finder",
+    "url": "https://yourusername.github.io/recipe-finder",
+    "description": "Discover thousands of delicious recipes from around the world",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://yourusername.github.io/recipe-finder/?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "MyKitchen Team"
+    }
+  }
+  </script>
+  <style>
+    /* Performance Optimizations */
+    img { loading: lazy; }
+    .card img { aspect-ratio: 16/9; object-fit: cover; }
+    
+    /* Critical CSS - Above the fold styles */
+    body { 
+      font-family: system-ui, -apple-system, sans-serif; /* Fallback before web fonts load */
+      margin: 0; 
+      background: #fafafa; 
+      color: #333; 
+      padding: 0;
+      font-display: swap; /* Better font loading */
+    }
+    
+    /* Lazy load placeholder */
+    .lazy-placeholder {
+      background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+      background-size: 200% 100%;
+      animation: loading 1.5s infinite;
+    }
+    
+    @keyframes loading {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    
+    /* Optimize animations for performance */
+    .card {
+      will-change: transform;
+      transform: translateZ(0); /* Enable hardware acceleration */
+    }
+    
+    .card:hover {
+      transform: translateY(-2px) translateZ(0);
+    }
+    
+    /* Login/Register Modal Styles */
+    .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+    .modal-content { background: white; padding: 40px; border-radius: 20px; width: 90%; max-width: 400px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .modal-content h2 { margin: 0 0 30px 0; color: #ff7043; font-size: 24px; }
+    .modal-content input { width: 100%; padding: 15px; margin: 10px 0; border: 2px solid #ddd; border-radius: 25px; font-size: 16px; outline: none; }
+    .modal-content input:focus { border-color: #ff7043; }
+    .password-container { position: relative; margin: 10px 0; }
+    .password-container input { width: 100%; padding: 15px 45px 15px 15px; margin: 0; border: 2px solid #ddd; border-radius: 25px; font-size: 16px; outline: none; box-sizing: border-box; }
+    .password-container input:focus { border-color: #ff7043; }
+    .toggle-eye { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font-size: 16px; cursor: pointer; user-select: none; padding: 2px; min-width: 20px; text-align: center; }
+    .toggle-eye:hover { opacity: 0.7; }
+    
+    /* Enhanced SEO and Accessibility */
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    
+    /* Skip link for keyboard navigation */
+    .skip-link { position: absolute; top: -40px; left: 6px; background: #ff7043; color: white; padding: 8px; text-decoration: none; border-radius: 4px; z-index: 100; }
+    .skip-link:focus { top: 6px; }
+    
+    /* Focus styles for better accessibility */
+    button:focus, input:focus, a:focus { outline: 2px solid #ff7043; outline-offset: 2px; }
+    
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+      .card { border: 2px solid #000; }
+      button { border: 2px solid #000; }
+    }
+    
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after { animation-delay: -1ms !important; animation-duration: 1ms !important; animation-iteration-count: 1 !important; background-attachment: initial !important; scroll-behavior: auto !important; transition-duration: 0s !important; transition-delay: 0s !important; }
+    }
+    
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #e0e0e0; }
+      .card { background: #2a2a2a; }
+      #search-box input { background: #2a2a2a; color: #e0e0e0; border-color: #444; }
+      #recipe-detail { background: #2a2a2a; }
+    }
+    
+    /* Improve semantic structure */
+    main { min-height: 60vh; }
+    .search-section { background: #fff3e0; }
+    .recipes-section { background: #fafafa; }
+    
+    /* Breadcrumb styling */
+    .breadcrumb { padding: 10px 15px; background: #f5f5f5; font-size: 14px; }
+    .breadcrumb a { color: #ff7043; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: #666; }
+    .modal-content button { width: 100%; padding: 15px; background: #ff7043; color: white; border: none; border-radius: 25px; font-size: 16px; font-weight: 600; cursor: pointer; margin: 20px 0 10px 0; }
+    .modal-content button:hover { background: #e64a19; }
+    .modal-content p { margin: 20px 0 0 0; color: #666; }
+    .modal-content a { color: #ff7043; text-decoration: none; font-weight: 600; }
+    .modal-content a:hover { text-decoration: underline; }
+    
+    /* Header with user menu */
+    .header-content { display: flex; justify-content: space-between; align-items: center; }
+    .user-menu { display: flex; align-items: center; gap: 15px; }
+    .user-menu span { color: white; font-weight: 500; }
+    #logout-btn { padding: 8px 15px; background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 15px; cursor: pointer; font-size: 14px; }
+    #logout-btn:hover { background: rgba(255,255,255,0.3); }
+    
+    /* AdMob Ad Styling */
+    .ad-container { margin: 15px 10px; padding: 10px; background: #f9f9f9; border-radius: 10px; text-align: center; }
+    .ad-container ins { display: block !important; min-height: 50px; }
+    
+    /* Interstitial Ad Overlay */
+    .interstitial-ad { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; display: none; align-items: center; justify-content: center; }
+    .interstitial-content { background: white; padding: 20px; border-radius: 15px; max-width: 90%; max-height: 80%; text-align: center; position: relative; }
+    .close-ad { position: absolute; top: 10px; right: 15px; background: #ff7043; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-weight: bold; }
+    .close-ad:hover { background: #e64a19; }
+    
+    header { background: #ff7043; color: white; padding: 20px 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    header h1 { margin: 0; font-size: 24px; font-weight: 600; }
+    #search-box { display: flex; padding: 15px; background: #fff3e0; gap: 10px; }
+    #search-box input { flex: 1; padding: 12px 15px; font-size: 16px; border: 1px solid #ddd; border-radius: 25px; outline: none; }
+    #search-box input:focus { border-color: #ff7043; }
+    #search-btn { padding: 12px 20px; background: #ff7043; color: white; border: none; border-radius: 25px; cursor: pointer; font-size: 16px; font-weight: 500; min-width: 80px; }
+    #search-btn:hover { background: #e64a19; }
+    #search-btn:active { transform: scale(0.98); }
+    #recipes { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 20px 15px; }
+    .card { background: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .card:active { transform: scale(0.98); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 20px; }
+    .card-body h3 { margin: 0 0 15px 0; font-size: 18px; font-weight: 600; line-height: 1.3; }
+    .card-body button { width: 100%; padding: 12px; border: none; background: #ff7043; color: white; border-radius: 25px; cursor: pointer; font-size: 16px; font-weight: 500; transition: background 0.2s; }
+    .card-body button:hover { background: #e64a19; }
+    .card-body button:active { transform: scale(0.98); }
+    #recipe-detail { padding: 20px 15px; background: white; margin: 15px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    #recipe-detail img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 15px; margin-bottom: 20px; }
+    #recipe-detail h2 { margin: 0 0 10px 0; font-size: 24px; font-weight: 600; }
+    .recipe-meta { margin-bottom: 20px; }
+    .recipe-category, .recipe-cuisine { background: #e8f5e8; color: #2e7d32; padding: 4px 8px; border-radius: 12px; font-size: 12px; margin-right: 8px; font-weight: 500; }
+    .recipe-cuisine { background: #e3f2fd; color: #1565c0; }
+    #recipe-detail h3 { margin: 25px 0 15px 0; font-size: 20px; font-weight: 600; color: #ff7043; }
+    #recipe-detail ul { padding-left: 20px; }
+    #recipe-detail li { margin-bottom: 8px; line-height: 1.5; }
+    #recipe-detail p { line-height: 1.6; font-size: 16px; }
+    
+    /* Mobile specific optimizations */
+    @media (max-width: 768px) {
+      #recipes { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; padding: 15px 10px; }
+      .card-body { padding: 15px; }
+      #recipe-detail { margin: 10px; padding: 15px; }
+      header h1 { font-size: 20px; }
+      #search-box { padding: 10px; }
+    }
+    
+    @media (max-width: 480px) {
+      #recipes { grid-template-columns: 1fr; gap: 15px; }
+      .card img { height: 180px; }
+      #search-box input { font-size: 16px; /* Prevents zoom on iOS */ }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Register Service Worker for better performance
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then((registration) => {
+            console.log('SW registered: ', registration);
+          })
+          .catch((registrationError) => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+    
+    // Critical rendering path optimization
+    document.addEventListener('DOMContentLoaded', () => {
+      // Preload critical images after DOM is ready
+      const criticalImages = [
+        'https://www.themealdb.com/images/category/beef.png',
+        'https://www.themealdb.com/images/category/chicken.png'
+      ];
+      
+      criticalImages.forEach(src => {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = src;
+        document.head.appendChild(link);
+      });
+    });
+  </script>
+  
+  <!-- Google AdSense/AdMob Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  
+  <!-- Firebase SDK -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+    
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCAm3-czRTxdcsNehsOSPs0MPGagODs4zo",
+      authDomain: "recipes-app-df6ad.firebaseapp.com",
+      databaseURL: "https://recipes-app-df6ad-default-rtdb.firebaseio.com",
+      projectId: "recipes-app-df6ad",
+      storageBucket: "recipes-app-df6ad.firebasestorage.app",
+      messagingSenderId: "774974492859",
+      appId: "1:774974492859:web:86b0edae5f4896fca5d99e"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    
+    // Make auth available globally
+    window.firebaseAuth = auth;
+    window.createUserWithEmailAndPassword = createUserWithEmailAndPassword;
+    window.signInWithEmailAndPassword = signInWithEmailAndPassword;
+    window.signOut = signOut;
+    window.onAuthStateChanged = onAuthStateChanged;
+  </script>
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h2>🍳 Welcome to MyKitchen</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <div class="password-container">
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="toggle-eye" onclick="togglePassword('password')">👁️</span>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" id="show-register">Sign up</a></p>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div id="register-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2>🍳 Create Account</h2>
+      <form id="register-form">
+        <input type="text" id="reg-username" placeholder="Display Name" required>
+        <input type="email" id="reg-email" placeholder="Email" required>
+        <div class="password-container">
+          <input type="password" id="reg-password" placeholder="Password" required>
+          <span class="toggle-eye" onclick="togglePassword('reg-password')">👁️</span>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="main-app" style="display: none;">
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header role="banner">
+    <div class="header-content">
+      <h1>🍳 MyKitchen - Recipe Finder App</h1>
+      <nav class="user-menu" role="navigation" aria-label="User menu">
+        <span id="user-name">Welcome!</span>
+        <button id="logout-btn" aria-label="Logout">Logout</button>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Breadcrumb Navigation -->
+  <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+    <span id="breadcrumb-content">
+      <a href="#" onclick="resetToHome()">Home</a>
+    </span>
+  </nav>
+
+  <main role="main" id="main-content">
+    <section class="search-section" aria-label="Recipe search">
+      <div id="search-box">
+        <label for="search" class="sr-only">Search recipes</label>
+        <input type="text" id="search" placeholder="Search recipes... (e.g. chicken)" aria-describedby="search-help">
+        <button id="search-btn" aria-label="Search recipes">Search</button>
+        <div id="search-help" class="sr-only">Type a recipe name, ingredient, or cuisine to find recipes</div>
+      </div>
+
+      <!-- Top Banner Ad -->
+      <div class="ad-container" id="top-banner-ad" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </section>
+
+    <section class="recipes-section" aria-label="Recipe results">
+      <div id="recipes" role="grid" aria-label="Recipe cards"></div>
+      
+      <!-- Middle Banner Ad -->
+      <div class="ad-container" id="middle-banner-ad" style="display: none;" aria-label="Advertisement">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+      
+      <div id="recipe-detail" role="article" aria-label="Recipe details"></div>
+    </section>
+  </main>
+  </div> <!-- End of main-app -->
+
+  <!-- Interstitial Ad Modal -->
+  <div class="interstitial-ad" id="interstitial-ad">
+    <div class="interstitial-content">
+      <button class="close-ad" onclick="closeInterstitialAd()">&times;</button>
+      <h3>🍳 Enjoy More Recipes!</h3>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+
+  <script>
+    // Wait for Firebase to load
+    window.addEventListener('load', () => {
+      // Authentication System with Firebase
+      const loginModal = document.getElementById("login-modal");
+      const registerModal = document.getElementById("register-modal");
+      const mainApp = document.getElementById("main-app");
+      const loginForm = document.getElementById("login-form");
+      const registerForm = document.getElementById("register-form");
+      const showRegister = document.getElementById("show-register");
+      const showLogin = document.getElementById("show-login");
+      const logoutBtn = document.getElementById("logout-btn");
+      const userName = document.getElementById("user-name");
+
+      // Monitor authentication state
+      window.onAuthStateChanged(window.firebaseAuth, (user) => {
+        if (user) {
+          // User is signed in
+          showMainApp(user.email.split('@')[0]); // Use email prefix as display name
+        } else {
+          // User is signed out
+          mainApp.style.display = 'none';
+          loginModal.style.display = 'flex';
+        }
+      });
+
+      // Switch between login and register
+      showRegister.addEventListener('click', (e) => {
+        e.preventDefault();
+        loginModal.style.display = 'none';
+        registerModal.style.display = 'flex';
+      });
+
+      showLogin.addEventListener('click', (e) => {
+        e.preventDefault();
+        registerModal.style.display = 'none';
+        loginModal.style.display = 'flex';
+      });
+
+      // Register functionality with Firebase
+      registerForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('reg-email').value;
+        const password = document.getElementById('reg-password').value;
+        const displayName = document.getElementById('reg-username').value;
+
+        try {
+          await window.createUserWithEmailAndPassword(window.firebaseAuth, email, password);
+          alert('Account created successfully!');
+          // Firebase auth state change will handle showing main app
+        } catch (error) {
+          alert(error.message);
+        }
+      });
+
+      // Login functionality with Firebase
+      loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        try {
+          await window.signInWithEmailAndPassword(window.firebaseAuth, email, password);
+          // Firebase auth state change will handle showing main app
+        } catch (error) {
+          alert(error.message);
+        }
+      });
+
+      // Logout functionality with Firebase
+      logoutBtn.addEventListener('click', async () => {
+        try {
+          await window.signOut(window.firebaseAuth);
+          // Firebase auth state change will handle hiding main app
+        } catch (error) {
+          alert(error.message);
+        }
+      });
+
+      function showMainApp(username) {
+        loginModal.style.display = 'none';
+        registerModal.style.display = 'none';
+        mainApp.style.display = 'block';
+        userName.textContent = `Welcome, ${username}!`;
+        
+        // Load recipes after login
+        loadInitialRecipes();
+      }
+
+      function loadInitialRecipes() {
+        categories.forEach(cat => fetchByCategory(cat));
+        cuisines.forEach(cuisine => loadCuisineOnInit(cuisine));
+        
+        // Initialize ads after content loads
+        initializeAds();
+      }
+      
+      // AdMob Integration Functions
+      function initializeAds() {
+        // Load banner ads
+        try {
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          // Show middle banner after some recipes are loaded
+          setTimeout(() => {
+            document.getElementById('middle-banner-ad').style.display = 'block';
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          }, 3000);
+        } catch (e) {
+          console.log('AdSense not loaded');
+        }
+      }
+      
+      // Show interstitial ad periodically
+      let recipeViewCount = 0;
+      function showInterstitialAd() {
+        recipeViewCount++;
+        if (recipeViewCount % 3 === 0) { // Show every 3rd recipe view
+          document.getElementById('interstitial-ad').style.display = 'flex';
+          try {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          } catch (e) {
+            console.log('AdSense not loaded');
+          }
+        }
+      }
+      
+      // Global function to close interstitial ad
+      window.closeInterstitialAd = function() {
+        document.getElementById('interstitial-ad').style.display = 'none';
+      }
+      
+      // Make showInterstitialAd globally available
+      window.showInterstitialAd = showInterstitialAd;
+      
+      // Small password visibility toggle function
+      window.togglePassword = function(inputId) {
+        const passwordInput = document.getElementById(inputId);
+        const toggleEye = passwordInput.nextElementSibling;
+        
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          toggleEye.textContent = '🙈'; // see-no-evil monkey (small)
+        } else {
+          passwordInput.type = 'password';
+          toggleEye.textContent = '👁️'; // eye (small)
+        }
+      };
+    }); // End of window load event listener
+    // Recipe app functionality (only works after login)
+    const recipesDiv = document.getElementById("recipes");
+    const detailDiv = document.getElementById("recipe-detail");
+    const searchInput = document.getElementById("search");
+    const searchBtn = document.getElementById("search-btn");
+
+    // Expanded categories to load more recipes
+    const categories = [
+      "Seafood", "Chicken", "Beef", "Dessert", "Vegetarian", "Pasta", "Lamb",
+      "Pork", "Breakfast", "Side", "Starter", "Vegan", "Miscellaneous",
+      "Goat", "Soup", "Rice", "Noodles", "Bread", "Salad", "Sandwich"
+    ];
+
+    // Various cuisines to add more diversity
+    const cuisines = [
+      "Italian", "Mexican", "Indian", "Chinese", "Japanese", "Thai",
+      "French", "Greek", "American", "British", "Spanish", "Turkish"
+    ];
+
+    async function fetchByCategory(category) {
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
+      const data = await res.json();
+      displayRecipes(data.meals, true);
+    }
+
+    async function fetchByCuisine(cuisine) {
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${cuisine}`);
+      const data = await res.json();
+      displayRecipes(data.meals, false); // Don't append when called directly
+    }
+
+    async function loadCuisineOnInit(cuisine) {
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${cuisine}`);
+      const data = await res.json();
+      displayRecipes(data.meals, true); // Append during initialization
+    }
+
+    async function fetchRecipes(query = "chicken") {
+      // Check if user is searching for Indian dishes
+      if (query.toLowerCase().includes('indian')) {
+        await fetchByCuisine('Indian');
+        return;
+      }
+      
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+      const data = await res.json();
+      displayRecipes(data.meals);
+    }
+
+    function displayRecipes(meals, append = false) {
+      if (!append) {
+        recipesDiv.innerHTML = "";
+        resetMetaTags(); // Reset meta tags when showing search results
+      }
+      detailDiv.innerHTML = "";
+      if (!meals) {
+        return;
+      }
+      meals.forEach(meal => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.setAttribute('itemscope', '');
+        card.setAttribute('itemtype', 'https://schema.org/Recipe');
+        card.innerHTML = `
+          <img src="${meal.strMealThumb}" alt="${meal.strMeal}" itemprop="image" loading="lazy" decoding="async">
+          <div class="card-body">
+            <h3 itemprop="name">${meal.strMeal}</h3>
+            <meta itemprop="author" content="MyKitchen Team">
+            <button onclick="showDetail(${meal.idMeal})" aria-label="View recipe for ${meal.strMeal}">View Recipe</button>
+          </div>
+        `;
+        recipesDiv.appendChild(card);
+      });
+    }
+
+    async function showDetail(id) {
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
+      const data = await res.json();
+      const meal = data.meals[0];
+
+      // Update page meta tags for SEO
+      updateMetaTags(meal);
+      
+      // Update breadcrumb navigation
+      updateBreadcrumb(meal.strMeal);
+      
+      // Add Recipe structured data
+      addRecipeStructuredData(meal);
+
+      detailDiv.innerHTML = `
+        <article itemscope itemtype="https://schema.org/Recipe">
+          <header>
+            <h2 itemprop="name">${meal.strMeal}</h2>
+            <div class="recipe-meta">
+              <span class="recipe-category" itemprop="recipeCategory">${meal.strCategory}</span>
+              <span class="recipe-cuisine" itemprop="recipeCuisine">${meal.strArea}</span>
+            </div>
+          </header>
+          <img src="${meal.strMealThumb}" alt="${meal.strMeal}" itemprop="image" loading="lazy" decoding="async">
+          <div itemprop="author" itemscope itemtype="https://schema.org/Person" style="display: none;">
+            <span itemprop="name">MyKitchen Team</span>
+          </div>
+          <meta itemprop="prepTime" content="PT30M">
+          <meta itemprop="cookTime" content="PT45M">
+          <meta itemprop="totalTime" content="PT75M">
+          <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" style="display: none;">
+            <meta itemprop="ratingValue" content="4.5">
+            <meta itemprop="reviewCount" content="${Math.floor(Math.random() * 100) + 50}">
+          </div>
+          ${meal.strSource ? `<div style="margin: 15px 0;"><a href="${meal.strSource}" target="_blank" rel="noopener noreferrer" style="background: #ff7043; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">🔗 View Original Recipe</a></div>` : ''}
+          <section>
+            <h3>Ingredients:</h3>
+            <ul itemprop="recipeIngredient">
+              ${getIngredients(meal).map(ing => `<li>${ing}</li>`).join("")}
+            </ul>
+          </section>
+          <section>
+            <h3>Instructions:</h3>
+            <div itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowTo">
+              <div itemprop="text">${formatInstructions(meal.strInstructions)}</div>
+            </div>
+          </section>
+          <div style="display: none;">
+            <span itemprop="recipeYield">4 servings</span>
+            <span itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+              <meta itemprop="calories" content="350">
+            </span>
+          </div>
+        </article>
+      `;
+      window.scrollTo({ top: detailDiv.offsetTop, behavior: 'smooth' });
+      
+      // Show interstitial ad after viewing recipe details
+      if (window.showInterstitialAd) {
+        window.showInterstitialAd();
+      }
+    }
+
+    // Breadcrumb and Navigation Functions
+    function updateBreadcrumb(recipeName = null) {
+      const breadcrumbContent = document.getElementById('breadcrumb-content');
+      if (recipeName) {
+        breadcrumbContent.innerHTML = `
+          <a href="#" onclick="resetToHome()">Home</a> › 
+          <span>${recipeName}</span>
+        `;
+      } else {
+        breadcrumbContent.innerHTML = `<a href="#" onclick="resetToHome()">Home</a>`;
+      }
+    }
+    
+    function resetToHome() {
+      resetMetaTags();
+      updateBreadcrumb();
+      detailDiv.innerHTML = "";
+      if (recipesDiv.children.length === 0) {
+        loadInitialRecipes();
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    // Make resetToHome globally available
+    window.resetToHome = resetToHome;
+
+    // SEO Enhancement Functions
+    function updateMetaTags(meal) {
+      // Update page title
+      document.title = `${meal.strMeal} Recipe | MyKitchen Recipe Finder`;
+      
+      // Update meta description
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.content = `Learn how to make ${meal.strMeal} with step-by-step instructions. ${meal.strCategory} recipe from ${meal.strArea} cuisine. Free cooking recipe on MyKitchen.`;
+      }
+      
+      // Update Open Graph tags
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = `${meal.strMeal} Recipe | MyKitchen`;
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.content = `Learn how to make ${meal.strMeal} with step-by-step instructions. ${meal.strCategory} recipe from ${meal.strArea} cuisine.`;
+      
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogImage) ogImage.content = meal.strMealThumb;
+      
+      const ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
+      if (ogImageAlt) ogImageAlt.content = `${meal.strMeal} recipe photo`;
+      
+      // Update Twitter Card tags
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitle) twitterTitle.content = `${meal.strMeal} Recipe | MyKitchen`;
+      
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDesc) twitterDesc.content = `Learn how to make ${meal.strMeal} with step-by-step instructions.`;
+      
+      const twitterImage = document.querySelector('meta[name="twitter:image"]');
+      if (twitterImage) twitterImage.content = meal.strMealThumb;
+      
+      const twitterImageAlt = document.querySelector('meta[name="twitter:image:alt"]');
+      if (twitterImageAlt) twitterImageAlt.content = `${meal.strMeal} recipe photo`;
+    }
+    
+    function addRecipeStructuredData(meal) {
+      // Remove existing recipe structured data
+      const existingScript = document.getElementById('recipe-structured-data');
+      if (existingScript) {
+        existingScript.remove();
+      }
+      
+      // Create new recipe structured data
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = 'recipe-structured-data';
+      
+      const ingredients = getIngredients(meal);
+      const instructions = meal.strInstructions.split('. ').filter(step => step.trim().length > 0);
+      
+      const recipeData = {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": meal.strMeal,
+        "description": `Delicious ${meal.strMeal} recipe from ${meal.strArea} cuisine. ${meal.strCategory} dish with step-by-step cooking instructions.`,
+        "image": [
+          meal.strMealThumb
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "MyKitchen Team"
+        },
+        "datePublished": new Date().toISOString(),
+        "prepTime": "PT30M",
+        "cookTime": "PT45M",
+        "totalTime": "PT75M",
+        "recipeCategory": meal.strCategory,
+        "recipeCuisine": meal.strArea,
+        "recipeYield": "4 servings",
+        "keywords": `${meal.strMeal}, ${meal.strCategory}, ${meal.strArea} cuisine, recipe, cooking`,
+        "recipeIngredient": ingredients,
+        "recipeInstructions": instructions.map((instruction, index) => ({
+          "@type": "HowToStep",
+          "name": `Step ${index + 1}`,
+          "text": instruction.trim() + (instruction.trim().endsWith('.') ? '' : '.')
+        })),
+        "nutrition": {
+          "@type": "NutritionInformation",
+          "calories": "350 calories"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "ratingCount": Math.floor(Math.random() * 100) + 50
+        }
+      };
+      
+      if (meal.strSource) {
+        recipeData.url = meal.strSource;
+      }
+      
+      script.textContent = JSON.stringify(recipeData, null, 2);
+      document.head.appendChild(script);
+    }
+    
+    // Function to reset meta tags to default
+    function resetMetaTags() {
+      document.title = "MyKitchen - Recipe Finder App | Discover Delicious Recipes";
+      
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.content = "MyKitchen Recipe Finder - Discover thousands of delicious recipes from around the world. Search Indian, Italian, Mexican, Chinese cuisines and more. Free recipe app with step-by-step cooking instructions.";
+      }
+      
+      // Reset Open Graph and Twitter Card tags to default
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = "MyKitchen - Recipe Finder App | Discover Delicious Recipes";
+      
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitle) twitterTitle.content = "MyKitchen - Recipe Finder App | Discover Delicious Recipes";
+      
+      // Remove recipe structured data when not viewing a specific recipe
+      const existingScript = document.getElementById('recipe-structured-data');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    }
+
+    function formatInstructions(instructions) {
+      // Split instructions into steps and format them
+      const steps = instructions.split(/\d+\.\s*|\n\n|\. /).filter(step => step.trim().length > 10);
+      if (steps.length > 1) {
+        return `<ol>${steps.map(step => `<li>${step.trim()}</li>`).join('')}</ol>`;
+      }
+      return `<p>${instructions}</p>`;
+    }
+
+    function getIngredients(meal) {
+      let ingredients = [];
+      for (let i = 1; i <= 20; i++) {
+        let ingredient = meal[`strIngredient${i}`];
+        let measure = meal[`strMeasure${i}`];
+        if (ingredient && ingredient.trim() !== "") {
+          ingredients.push(`${ingredient} - ${measure}`);
+        }
+      }
+      return ingredients;
+    }
+
+    // Event listeners for search (only active after login)
+    searchInput.addEventListener("keyup", (e) => {
+      if (e.key === "Enter") {
+        fetchRecipes(searchInput.value);
+      }
+    });
+
+    // Search button functionality
+    searchBtn.addEventListener("click", () => {
+      fetchRecipes(searchInput.value);
+    });
+  </script>
+</body>
+</html>

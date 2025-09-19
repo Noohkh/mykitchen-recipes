@@ -1,0 +1,5 @@
+# Ignore backend folder for GitHub Pages
+backend/
+node_modules/
+.env
+*.log

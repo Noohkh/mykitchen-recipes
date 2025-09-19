@@ -1,0 +1,39 @@
+# GitHub Pages Configuration for MyKitchen Recipe Finder
+
+# Base URL configuration (will be updated automatically by GitHub)
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Repository name (update this with your actual repo name)
+repository: "yourusername/recipe-finder"
+
+# GitHub Pages settings
+title: "MyKitchen Recipe Finder"
+description: "Discover thousands of delicious recipes from around the world"
+
+# SEO settings
+lang: en
+author: "MyKitchen Team"
+
+# Social media settings
+twitter:
+  username: MyKitchenApp
+
+# Enable GitHub Pages features
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Include/exclude files
+include:
+  - _pages
+  - sitemap.xml
+  - robots.txt
+  - sw.js
+
+exclude:
+  - backend/
+  - node_modules/
+  - README.md
+  - README_SEO.md
+  - package*.json
