@@ -4,7 +4,7 @@
   
   <!-- Main Homepage -->
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -12,49 +12,49 @@
   
   <!-- Recipe Categories -->
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/indian</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/indian</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/italian</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/italian</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/mexican</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/mexican</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/chinese</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/chinese</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/japanese</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/japanese</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/thai</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/thai</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/french</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/french</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -62,56 +62,56 @@
   
   <!-- Recipe Categories by Type -->
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/seafood</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/seafood</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/chicken</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/chicken</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/beef</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/beef</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/vegetarian</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/vegetarian</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/vegan</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/vegan</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/dessert</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/dessert</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/breakfast</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/breakfast</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/recipes/pasta</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/recipes/pasta</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -119,28 +119,28 @@
   
   <!-- Popular Search Terms -->
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/search?q=chicken curry</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/search?q=chicken curry</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/search?q=pasta recipes</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/search?q=pasta recipes</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/search?q=healthy recipes</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/search?q=healthy recipes</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/search?q=quick meals</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/search?q=quick meals</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -148,28 +148,28 @@
   
   <!-- About and Support Pages -->
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/about</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/about</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/contact</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/contact</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/privacy</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/privacy</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
-    <loc>https://yourusername.github.io/recipe-finder/terms</loc>
+    <loc>https://Noohkh.github.io/mykitchen-recipes/terms</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

@@ -39,11 +39,11 @@ Disallow: /*.env$
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://yourusername.github.io/recipe-finder/sitemap.xml
+Sitemap: https://Noohkh.github.io/mykitchen-recipes/sitemap.xml
 
 # Additional sitemap locations for different content types
-# Sitemap: https://yourusername.github.io/recipe-finder/sitemap-recipes.xml
-# Sitemap: https://yourusername.github.io/recipe-finder/sitemap-images.xml
+# Sitemap: https://Noohkh.github.io/mykitchen-recipes/sitemap-recipes.xml
+# Sitemap: https://Noohkh.github.io/mykitchen-recipes/sitemap-images.xml
 
 # Special instructions for specific bots
 User-agent: Googlebot
